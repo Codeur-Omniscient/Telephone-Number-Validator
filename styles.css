@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+#user-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#user-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#check-btn {
+  background-color: #3498db;
+  color: white;
+  flex: 1;
+}
+
+#check-btn:hover {
+  background-color: #2980b9;
+}
+
+#clear-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  flex: 1;
+}
+
+#clear-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.results {
+  min-height: 50px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.valid {
+  color: #27ae60;
+}
+
+.invalid {
+  color: #e74c3c;
+}
+
+.examples {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.examples h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.examples ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.examples li {
+  background-color: #f1f8ff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #d1e8ff;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .examples ul {
+    flex-direction: column;
+  }
+}
